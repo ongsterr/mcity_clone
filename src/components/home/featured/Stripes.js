@@ -51,9 +51,7 @@ const Stripes = () => {
             ease: easePolyOut,
           },
           events: {
-            end() {
-              console.log('animation finish')
-            },
+            end() {},
           },
         }}
       >

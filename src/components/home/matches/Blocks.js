@@ -31,12 +31,7 @@ const Blocks = () => {
         ))
       : null
 
-  return (
-    <div className="home_matches">
-      {showMatches(state.matches)}
-      {console.log(state.matches)}
-    </div>
-  )
+  return <div className="home_matches">{showMatches(state.matches)}</div>
 }
 
 export default Blocks
