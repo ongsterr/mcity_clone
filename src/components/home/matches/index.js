@@ -12,9 +12,9 @@ const MacthesHome = () => {
         </Tag>
         <Blocks />
         <Tag
-          bck="#0e1731"
-          size="50px"
-          color="#ffffff"
+          bck="#ffffff"
+          size="27px"
+          color="#0e1731"
           link={true}
           linkTo="/the_team"
         >

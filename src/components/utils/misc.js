@@ -40,3 +40,23 @@ export const firebaseLooper = snapshot => {
 export const reverseArray = arr => {
   return arr.reverse()
 }
+
+export const validate = element => {
+  let validation = [true, '']
+
+  if (element.validation.email) {
+    const valid = /\S+@\S+\.\S/.test(element.value)
+    const message = `${!valid ? 'Must be a valid email' : ''}`
+
+    validation = !valid ? [valid, message] : validation
+  }
+
+  if (element.validation.required) {
+    const valid = element.value.trim() !== ''
+    const message = `${!valid ? 'This field is required' : ''}`
+
+    validation = !valid ? [valid, message] : validation
+  }
+
+  return validation
+}
